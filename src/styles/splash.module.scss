@@ -1,0 +1,91 @@
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+
+    padding: 0;
+    margin: 0;
+    
+    background-color: #8E412E;
+    animation: slideOutUp 1s 1s forwards;
+
+    overflow: hidden;
+}
+
+@keyframes slideOutUp {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -100%
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    z-index: 11;
+
+    //animate spin 1s
+    animation: spin 1s 1s forwards;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    max-width: 200px;
+    max-height: 200px;
+    z-index: 12;
+}
+
+.lu, .ld, .ru, .rd {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    z-index: 1;
+}
+
+.lu {
+    top: 0;
+    left: 0;
+}
+
+.ru {
+    top: 0;
+    right: 0;
+}
+
+.ld {
+    bottom: 0;
+    left: 0;
+    width: 70%;
+}
+
+.rd {
+    bottom: 0;
+    right: 0;
+    width: 70%;
+}
