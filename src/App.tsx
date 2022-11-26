@@ -4,6 +4,7 @@ import './App.css';
 import { Routes, Route, HashRouter as Router } from 'react-router-dom';
 import Homepage from './routes/homepage';
 import Explore from './routes/explore';
+import Events from './routes/events';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage/>} />
         <Route path="/explore" element={<Explore/>} />
-        <Route path="/events" element={<></>} />
+        <Route path="/events" element={<Events/>} />
         <Route path="/goodies" element={<></>} />
         <Route path="/favourites" element={<></>} />
         <Route path="/about" element={<></>} />

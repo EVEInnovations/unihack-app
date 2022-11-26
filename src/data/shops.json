@@ -50,5 +50,260 @@
                 "close": "22:00"
             }
         ]
+    },{
+        "id": 1,
+        "name": "Starbucks",
+        "address": "123 Main St, Timisoara",
+        "phone": "0787752332",
+        "website": "http://www.starbucks.com",
+        "rating": "4.5",
+        "wifi": true,
+        "wifiPassword": "",
+        "outlets": 20,
+        "outletsAvailable": 10,
+        "tables": 20,
+        "tablesAvailable": 10,
+        "image": "https://images.unsplash.com/photo-1568036193587-84226a9c5a1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=406&q=80",
+        "openingHours": [
+            {
+                "day": "Monday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Tuesday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Wednesday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Thursday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Friday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Saturday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Sunday",
+                "open": "08:00",
+                "close": "22:00"
+            }
+        ]
+    },{
+        "id": 1,
+        "name": "Starbucks",
+        "address": "123 Main St, Timisoara",
+        "phone": "0787752332",
+        "website": "http://www.starbucks.com",
+        "rating": "4.5",
+        "wifi": true,
+        "wifiPassword": "",
+        "outlets": 20,
+        "outletsAvailable": 10,
+        "tables": 20,
+        "tablesAvailable": 10,
+        "image": "https://images.unsplash.com/photo-1568036193587-84226a9c5a1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=406&q=80",
+        "openingHours": [
+            {
+                "day": "Monday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Tuesday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Wednesday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Thursday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Friday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Saturday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Sunday",
+                "open": "08:00",
+                "close": "22:00"
+            }
+        ]
+    },{
+        "id": 1,
+        "name": "Starbucks",
+        "address": "123 Main St, Timisoara",
+        "phone": "0787752332",
+        "website": "http://www.starbucks.com",
+        "rating": "4.5",
+        "wifi": true,
+        "wifiPassword": "",
+        "outlets": 20,
+        "outletsAvailable": 10,
+        "tables": 20,
+        "tablesAvailable": 10,
+        "image": "https://images.unsplash.com/photo-1568036193587-84226a9c5a1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=406&q=80",
+        "openingHours": [
+            {
+                "day": "Monday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Tuesday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Wednesday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Thursday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Friday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Saturday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Sunday",
+                "open": "08:00",
+                "close": "22:00"
+            }
+        ]
+    },{
+        "id": 1,
+        "name": "Starbucks",
+        "address": "123 Main St, Timisoara",
+        "phone": "0787752332",
+        "website": "http://www.starbucks.com",
+        "rating": "4.5",
+        "wifi": true,
+        "wifiPassword": "",
+        "outlets": 20,
+        "outletsAvailable": 10,
+        "tables": 20,
+        "tablesAvailable": 10,
+        "image": "https://images.unsplash.com/photo-1568036193587-84226a9c5a1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=406&q=80",
+        "openingHours": [
+            {
+                "day": "Monday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Tuesday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Wednesday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Thursday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Friday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Saturday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Sunday",
+                "open": "08:00",
+                "close": "22:00"
+            }
+        ]
+    },{
+        "id": 1,
+        "name": "Starbucks",
+        "address": "123 Main St, Timisoara",
+        "phone": "0787752332",
+        "website": "http://www.starbucks.com",
+        "rating": "4.5",
+        "wifi": true,
+        "wifiPassword": "",
+        "outlets": 20,
+        "outletsAvailable": 10,
+        "tables": 20,
+        "tablesAvailable": 10,
+        "image": "https://images.unsplash.com/photo-1568036193587-84226a9c5a1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=406&q=80",
+        "openingHours": [
+            {
+                "day": "Monday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Tuesday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Wednesday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Thursday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Friday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Saturday",
+                "open": "08:00",
+                "close": "22:00"
+            },
+            {
+                "day": "Sunday",
+                "open": "08:00",
+                "close": "22:00"
+            }
+        ]
     }
 ]
