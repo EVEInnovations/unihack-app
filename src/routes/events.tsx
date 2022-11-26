@@ -16,7 +16,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 export default function Events() {
+    const [query, setQuery] = React.useState("");
 
+    const handle = (event: any) => {
+        setQuery(event.target.value);
+    };
 
     return (
         <div className={styles.container}>
@@ -26,15 +30,30 @@ export default function Events() {
             <img src={rd} className={styles.rd} />
 
             <div className={styles.topBar}>
-                <Link to="/" className={styles.backButton} ><FontAwesomeIcon icon={faArrowLeft}/></Link>
-                <input type="text" placeholder="Search" className={styles.bar} />
+                <Link to="/" className={styles.backButton} ><FontAwesomeIcon icon={faArrowLeft} /></Link>
+                <input type="text" placeholder="Search" className={styles.bar} onInput={handle} />
             </div>
-            <h1 className={styles.header}>Around You</h1>
-            <div className={styles.horiz}>
-                {shops.map((shop: any) => {
-                    return <HorizListItem wifi={shop.wifi} address={shop.address} rating={shop.rating} name={shop.name} image={shop.image} />
-                })}
-            </div>
+            {query.trim().length === 0 ?
+                <>
+                    <h1 className={styles.header}>Around You</h1>
+                    <div className={styles.horiz}>
+                        {shops.map((shop: any) => {
+                            return <HorizListItem wifi={shop.wifi} address={shop.address} rating={shop.rating} name={shop.name} image={shop.image} />
+                        })}
+                    </div>
+                </>
+                : <>
+                    <h1 className={styles.header}>Results</h1>
+                    <div className={styles.horiz}>
+                        {shops.map((shop: any) => {
+                            console.log(JSON.stringify(shop.name));
+                            if (JSON.stringify(shop.name).toLowerCase().includes(query.toLowerCase())) {
+                                return <HorizListItem wifi={shop.wifi} address={shop.address} rating={shop.rating} name={shop.name} image={shop.image} />
+                            }
+                        })}
+                    </div>
+                </>
+            }
             {/* <img src={back} className={styles.back} /> */}
         </div>
     );
