@@ -26,4 +26,36 @@
         grid-gap: 10px;
     }
 }
+    .bleft, .bright ,.upleft ,.upright{
+        position: fixed;
+        width: 50%;
+        height: auto;
+        z-index: 1;
+    }
+    
+   
+    
+    .bleft {
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        z-index:2;
+    }
+    
+    .bright {
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+.upleft{
+    top: 0;
+    left: 0;
+    width: 30%;
+}
+.upright{
+    top: 0;
+    right: 0;
+    width: 60%;
+}
+
 
