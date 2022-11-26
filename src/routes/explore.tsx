@@ -12,7 +12,7 @@ import shops from "../data/shops.json";
 import top from "../data/top.json";
 
 export default function Explore() {
-    
+
 
     return (
         <div className={styles.container}>
@@ -26,18 +26,18 @@ export default function Explore() {
             <div className={styles.wantedWrapper}>
                 <ul className={styles.wanted}>
                     {shops.map((shop: any) => {
-                        if(top.includes(shop.id)) {
+                        if (top.includes(shop.id)) {
                             return <ListItem address={shop.address} rating={shop.rating} name={shop.name} password={shop.password} image={shop.image} />
-                        }    
+                        }
                     })}
                 </ul>
             </div>
             <h1 className={styles.header}>Close to you</h1>
             <div className={styles.horiz}>
-            {shops.map((shop: any) => {
-                            return <HorizListItem wifi={shop.wifi} address={shop.address} rating={shop.rating} name={shop.name} image={shop.image} /> 
-                    })}
-                    </div>
+                {shops.map((shop: any) => {
+                    return <HorizListItem wifi={shop.wifi} address={shop.address} rating={shop.rating} name={shop.name} image={shop.image} />
+                })}
+            </div>
         </div>
     );
 }
