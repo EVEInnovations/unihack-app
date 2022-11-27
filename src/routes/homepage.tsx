@@ -7,7 +7,7 @@ import bleft from '../assets/vectors/Homepage/bleft.svg';
 import bright from '../assets/vectors/Homepage/bright.svg';
 import upleft from '../assets/vectors/Homepage/upleft.svg';
 import upright from '../assets/vectors/Homepage/upright.svg';
-import { faFontAwesome } from '@fortawesome/free-solid-svg-icons';
+// import cup from '../assets/vectors/Homepage/cup.svg';
 import { faCoffee,faSearch,faCalendarAlt,faHeart,faStar } from '@fortawesome/free-solid-svg-icons'
 
 export default function Homepage() {
@@ -34,6 +34,7 @@ export default function Homepage() {
           
 
             <div className={styles.container}>
+                {/* <img src={cup} className={styles.cup} /> */}
                 <div className={styles.grid}>
                     <HomeButton icon={faSearch} text="Explore" destination="/explore" />
                     <HomeButton icon={faCalendarAlt} text="Events" destination="/events" />
