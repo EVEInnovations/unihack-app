@@ -10,7 +10,7 @@ import { faChair, faPlug, faBoltLightning, faPhone, faWifi, faMapPin, faGlobe, f
 
 import shops from "../data/shops.json";
 import top from "../data/top.json";
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import goodies from '../data/goodies.json';
@@ -32,52 +32,9 @@ export default function Cafe() {
         return shops[0];
     });
 
-    console.log(props);
+    let nav = useNavigate();
 
-    const data = [
-        {
-          name: 'Page A',
-          uv: 4000,
-          pv: 2400,
-          amt: 2400,
-        },
-        {
-          name: 'Page B',
-          uv: 3000,
-          pv: 1398,
-          amt: 2210,
-        },
-        {
-          name: 'Page C',
-          uv: 2000,
-          pv: 9800,
-          amt: 2290,
-        },
-        {
-          name: 'Page D',
-          uv: 2780,
-          pv: 3908,
-          amt: 2000,
-        },
-        {
-          name: 'Page E',
-          uv: 1890,
-          pv: 4800,
-          amt: 2181,
-        },
-        {
-          name: 'Page F',
-          uv: 2390,
-          pv: 3800,
-          amt: 2500,
-        },
-        {
-          name: 'Page G',
-          uv: 3490,
-          pv: 4300,
-          amt: 2100,
-        },
-      ];
+    console.log(props);
 
     return (
         <div className={styles.container}>
@@ -86,7 +43,7 @@ export default function Cafe() {
             <img src={ru} className={styles.ru} />
             <img src={rd} className={styles.rd} />
             <div className={styles.topBar}>
-                <Link to="/explore" className={styles.backButton} ><FontAwesomeIcon icon={faArrowLeft} /></Link>
+                <span onClick={() => {nav(-1)}} className={styles.backButton} ><FontAwesomeIcon icon={faArrowLeft} /></span>
                 {/* <input type="text" placeholder="Search" className={styles.bar} onInput={handle} /> */}
                 <Faver id={props.id} />
             </div>
@@ -126,7 +83,7 @@ export default function Cafe() {
                     <div className={styles.wantedWrapper}>
                         <ul className={styles.wanted}>
                             {goodies.map((goodie: any) => {
-                                if (top.includes(goodie.id)) {
+                                if (goodie.addId == props.id) {
                                     return <GoodieItem id={goodie.id} price={goodie.price} name={goodie.name} image={goodie.image} />
                                 }
                             })}
@@ -135,13 +92,13 @@ export default function Cafe() {
                 </>
                 : null}
 
-            {props.goodies.length > 0 ?
+            {props.events.length > 0 ?
                 <>
                     <h1 className={styles.header}>Upcoming Events:</h1>
                     <div className={styles.wantedWrapper}>
                         <ul className={styles.wanted}>
                             {events.map((e: any) => {
-                                if (top.includes(e.id)) {
+                                if (e.addId == props.id) {
                                     let args = JSON.stringify(e.datetime).trim().toLocaleLowerCase().substring(1, JSON.stringify(e.datetime).length - 1).split(" ");
                                     return <EventItem id={e.id} date={args[0]} time={args[1]} price={e.price} name={e.name} image={e.image} />
                                 }

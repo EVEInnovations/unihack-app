@@ -40,7 +40,7 @@ export default function Goodies() {
                     <h1 className={styles.header}>Good Stuff</h1>
                     <div className={styles.horiz}>
                         {goodies.map((e: any) => {
-                            return <DynamicItem id={e.id} address={e.address} price={e.price} name={e.name} image={e.image} />
+                            return <DynamicItem id={e.addId} address={e.address} price={e.price} name={e.name} image={e.image} />
                         })}
                     </div>
                 </>
