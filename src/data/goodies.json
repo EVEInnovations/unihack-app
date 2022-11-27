@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Latte Macchiato",
+        "address": "Journey Kaffa",
+        "price": 17,
+        "image": "https://images.unsplash.com/photo-1597676345712-ba4536073513?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80"
+    },
+    {
+        "id": 2,
+        "name": "Cappuccino",
+        "address": "Viviani Caffe",
+        "price": 20,
+        "image": "https://images.unsplash.com/photo-1593443320739-77f74939d0da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80"
+    },
+    {
+        "id": 3,
+        "name": "Flat White",
+        "address": "Emotion Cafe",
+        "price": 22,
+        "image": "https://images.unsplash.com/photo-1517236837508-2b3fca41f2f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    },
+    {
+        "id": 4,
+        "name": "Caramel Latte",
+        "address": "Ovride Specialty Coffee",
+        "price": 22,
+        "image": "https://images.unsplash.com/photo-1644461151937-6c8cf9d3dc51?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=386&q=80"
+    }
+]

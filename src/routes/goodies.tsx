@@ -9,20 +9,21 @@ import rd from "../assets/vectors/Explore/rd.svg";
 import back from "../assets/vectors/Explore/back.svg";
 import HorizListItem from '../components/horizlistitem';
 
-import events from "../data/events.json";
+import goodies from "../data/goodies.json";
 import top from "../data/top.json";
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import DynamicItem from '../components/dynamicitem';
 
-export default function Events() {
+export default function Goodies() {
     const [query, setQuery] = React.useState("");
 
     const handle = (event: any) => {
         setQuery(event.target.value);
     };
 
+    //TODO: Make this page work
     return (
         <div className={styles.container}>
             <img src={lu} className={styles.lu} />
@@ -36,20 +37,20 @@ export default function Events() {
             </div>
             {query.trim().length === 0 ?
                 <>
-                    <h1 className={styles.header}>Around You</h1>
+                    <h1 className={styles.header}>Good Stuff</h1>
                     <div className={styles.horiz}>
-                        {events.map((e: any) => {
-                            return <DynamicItem address={e.address} price={e.price} name={e.name} image={e.image} />
+                        {goodies.map((e: any) => {
+                            return <DynamicItem id={e.id} address={e.address} price={e.price} name={e.name} image={e.image} />
                         })}
                     </div>
                 </>
                 : <>
                     <h1 className={styles.header}>Results</h1>
                     <div className={styles.horiz}>
-                        {events.map((e: any) => {
+                        {goodies.map((e: any) => {
                             console.log(JSON.stringify(e.name));
                             if (JSON.stringify(e.name).toLowerCase().includes(query.toLowerCase())) {
-                                return <DynamicItem address={e.address} price={e.price} name={e.name} image={e.image} />
+                                return <DynamicItem id={e.id}  address={e.address} price={e.price} name={e.name} image={e.image}  />
                             }
                         })}
                     </div>

@@ -41,7 +41,7 @@ export default function Explore() {
                             <ul className={styles.wanted}>
                                 {shops.map((shop: any) => {
                                     if (top.includes(shop.id)) {
-                                        return <ListItem address={shop.address} rating={shop.rating} name={shop.name} password={shop.password} image={shop.image} />
+                                        return <ListItem id={shop.id} wifi={shop.wifi} address={shop.address} rating={shop.rating} name={shop.name} password={shop.password} image={shop.image} />
                                     }
                                 })}
                             </ul>
@@ -49,7 +49,7 @@ export default function Explore() {
                         <h1 className={styles.header}>Close to you</h1>
                         <div className={styles.horiz}>
                             {shops.map((shop: any) => {
-                                return <HorizListItem wifi={shop.wifi} address={shop.address} rating={shop.rating} name={shop.name} image={shop.image} />
+                                return <HorizListItem id={shop.id} wifi={shop.wifi} address={shop.address} rating={shop.rating} name={shop.name} image={shop.image} />
                             })}
                         </div>
                     </>
@@ -59,7 +59,7 @@ export default function Explore() {
                             {shops.map((shop: any) => {
                                 console.log(JSON.stringify(shop.name));
                                 if (JSON.stringify(shop.name).toLowerCase().includes(query.toLowerCase())) {
-                                    return <HorizListItem wifi={shop.wifi} address={shop.address} rating={shop.rating} name={shop.name} image={shop.image} />
+                                    return <HorizListItem id={shop.id} wifi={shop.wifi} address={shop.address} rating={shop.rating} name={shop.name} image={shop.image} />
                                 }
                             })}
                         </div>

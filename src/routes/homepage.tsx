@@ -14,10 +14,11 @@ export default function Homepage() {
     const expiryTimestamp = new Date();
     expiryTimestamp.setSeconds(expiryTimestamp.getSeconds() + 600);
 
-    const [startup, setSplash] = React.useState(true);
+    const [startup, setSplash] = React.useState(window.localStorage.getItem("started") == "false" );
     useEffect(() => {
         setTimeout(() => {
             setSplash(false);
+            window.localStorage.setItem("started", "true");
         }, 3000);
     }, []);
 
