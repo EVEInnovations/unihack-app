@@ -12,7 +12,7 @@ import Fav from './routes/fav';
 import fav from "./data/favourites.json"
 
 function App() {
-  window.localStorage.setItem("favourites", JSON.stringify(fav).substring(1, JSON.stringify(fav).length - 1));
+  // window.localStorage.setItem("favourites", JSON.stringify(fav).substring(1, JSON.stringify(fav).length - 1));
   window.localStorage.setItem('started', 'false');
   return (
     <Router>
