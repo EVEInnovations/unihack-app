@@ -80,7 +80,7 @@
         "events": [
             1,
             2
-        ]
+        ],
         "traffic": [
             {
                 "span": "10:00-12:00",
@@ -114,7 +114,7 @@
     "name": "Garage Cafe",
     "address": "Strada Palanca 2, Timișoara",
     "phone": "0356001958",
-    "website": "#",
+    "website": "https://garagecafetm.com/",
     "rating": "4.6",
     "wifi": true,
     "wifiSpeed": "50mbps",
@@ -123,7 +123,7 @@
     "outletsAvailable": 9,
     "tables": 10,
     "tablesAvailable": 4,
-    "image": "https://www.google.com/url?url=http%3A%2F%2Fgaragecafetm.com%2F&sa=t&rct=j&source=maps&usg=AOvVaw3jIBeKmW4rf16Ut3uwAq7_&ved=1i%3A0%2Ct%3A38093%2Ce%3A16%2Cp%3A6z2CY6e8DOmF9u8P0vudgAY%3A474",
+    "image": "https://guerrillaradio.b-cdn.net/avanpost/uploads/images/2020/8/31/big-garage-16x9-guerilla-6-upi2.jpg",
     "openWeek": "07:30-00:00",
     "openWeekend": "10:00-00:00",
     "notes": [
@@ -135,7 +135,7 @@
     ],
     "events": [
         
-    ]
+    ],
     "traffic": [
         {
             "span": "10:00-12:00",
@@ -191,7 +191,7 @@
     ],
     "events": [
         
-    ]
+    ],
     "traffic": [
         {
             "span": "10:00-12:00",
@@ -245,7 +245,7 @@
     ],
     "events": [
         
-    ]
+    ],
     "traffic": [
         {
             "span": "10:00-12:00",
@@ -299,6 +299,32 @@
     ],
     "events": [
         
+    ],
+    "traffic": [
+        {
+            "span": "10:00-12:00",
+            "traffic": 3
+        },
+        {
+            "span": "12:00-14:00",
+            "traffic": 4
+        },
+        {
+            "span": "14:00-16:00",
+            "traffic": 3
+        },
+        {
+            "span": "16:00-18:00",
+            "traffic": 2
+        },
+        {
+            "span": "18:00-20:00",
+            "traffic": 2
+        },
+        {
+            "span": "20:00-22:00",
+            "traffic": 1
+        }
     ]
 },
 {
@@ -315,7 +341,7 @@
     "outletsAvailable": 5,
     "tables":20 ,
     "tablesAvailable": 3,
-    "image": "https://www.google.com/search?q=Ovride+Specialty+Coffee&sxsrf=ALiCzsZyLwxzRYx917tG847LcO3iCzVfwA:1669485359483&source=lnms&tbm=isch&sa=X&ved=",
+    "image": "https://htspt.co/media/sights/308-image.jpg",
     "openWeek": "08:00-17:00",
     "openWeekend": "10:00-17:00",
     "notes": [
@@ -327,7 +353,7 @@
     ],
     "events": [
         
-    ]
+    ],
     "traffic": [
         {
             "span": "10:00-12:00",
@@ -352,7 +378,7 @@
         {
             "span": "20:00-22:00",
             "traffic": 1
-        },
+        }
     ]
 },
 {
@@ -369,7 +395,7 @@
     "outletsAvailable": 5,
     "tables":8 ,
     "tablesAvailable": 2,
-    "image": "https://d2fdt3nym3n14p.cloudfront.net/venue/2126/gallery/5355/conversions/viviani-caffe-13952-big.jpg",
+    "image": "https://d2fdt3nym3n14p.cloudfront.net/venue/2049/gallery/5121/conversions/emotion-cafe-13347-big.jpg",
     "openWeek": "08:00-23:00",
     "openWeekend": "09:30-23:00",
     "notes": [
@@ -381,7 +407,7 @@
     ],
     "events": [
         
-    ]
+    ],
     "traffic": [
         {
             "span": "10:00-12:00",
@@ -406,7 +432,7 @@
         {
             "span": "20:00-22:00",
             "traffic": 1
-        },
+        }
     ]
 },
 {
@@ -435,7 +461,7 @@
     ],
     "events": [
         
-    ]
+    ],
     "traffic": [
         {
             "span": "10:00-12:00",
@@ -460,7 +486,7 @@
         {
             "span": "20:00-22:00",
             "traffic": 1
-        },
+        }
     ]
 },
 {
@@ -489,7 +515,7 @@
     ],
     "events": [
         
-    ]
+    ],
     "traffic": [
         {
             "span": "10:00-12:00",
@@ -514,9 +540,9 @@
         {
             "span": "20:00-22:00",
             "traffic": 1
-        },
+        }
     ]
-},
+}
 
 
 

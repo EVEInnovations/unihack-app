@@ -39,7 +39,7 @@ export default function Events() {
                     <h1 className={styles.header}>Around You</h1>
                     <div className={styles.horiz}>
                         {events.map((e: any) => {
-                            return <DynamicItem address={e.address} price={e.price} name={e.name} image={e.image} />
+                            return <DynamicItem id={e.addId} address={e.address} price={e.price} name={e.name} image={e.image} />
                         })}
                     </div>
                 </>
@@ -49,7 +49,7 @@ export default function Events() {
                         {events.map((e: any) => {
                             console.log(JSON.stringify(e.name));
                             if (JSON.stringify(e.name).toLowerCase().includes(query.toLowerCase())) {
-                                return <DynamicItem address={e.address} price={e.price} name={e.name} image={e.image} />
+                                return <DynamicItem id={e.addId} address={e.address} price={e.price} name={e.name} image={e.image} />
                             }
                         })}
                     </div>
