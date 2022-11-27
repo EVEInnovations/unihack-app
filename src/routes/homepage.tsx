@@ -37,8 +37,8 @@ export default function Homepage() {
                 <div className={styles.grid}>
                     <HomeButton icon={faSearch} text="Explore" destination="/explore" />
                     <HomeButton icon={faCalendarAlt} text="Events" destination="/events" />
-                    <HomeButton icon={faHeart} text="Goodies" destination="/goodies" />
-                    <HomeButton icon={faStar} text="Favourites" destination="/favourites" />
+                    <HomeButton icon={faStar} text="Goodies" destination="/goodies" />
+                    <HomeButton icon={faHeart} text="Favourites" destination="/favourites" />
                 </div>
             </div>
         </>

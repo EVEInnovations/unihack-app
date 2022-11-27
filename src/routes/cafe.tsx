@@ -6,7 +6,7 @@ import lu from "../assets/vectors/Explore/lu.svg";
 import ld from "../assets/vectors/Explore/ld.svg";
 import ru from "../assets/vectors/Explore/ru.svg";
 import rd from "../assets/vectors/Explore/rd.svg";
-import { faChair, faPlug, faBoltLightning, faPhone, faWifi, faMapPin } from '@fortawesome/free-solid-svg-icons'
+import { faChair, faPlug, faBoltLightning, faPhone, faWifi, faMapPin, faGlobe, faStar } from '@fortawesome/free-solid-svg-icons'
 
 import shops from "../data/shops.json";
 import top from "../data/top.json";
@@ -17,6 +17,7 @@ import goodies from '../data/goodies.json';
 import events from '../data/events.json';
 import GoodieItem from '../components/goodieitem';
 import EventItem from '../components/eventitem';
+import Faver from '../components/faver';
 
 export default function Cafe() {
     let { id } = useParams();
@@ -39,12 +40,15 @@ export default function Cafe() {
             <div className={styles.topBar}>
                 <Link to="/explore" className={styles.backButton} ><FontAwesomeIcon icon={faArrowLeft} /></Link>
                 {/* <input type="text" placeholder="Search" className={styles.bar} onInput={handle} /> */}
+                <Faver id={props.id} />
             </div>
             <div className={styles.imageContainer}><img src={props.image} alt={props.name} className={styles.image} /></div>
             <div className={styles.dataContainer}>
                 <h1 className={styles.name}>{props.name}</h1>
-                <h2 className={styles.address}><FontAwesomeIcon icon={faPhone} className={styles.icon} />{props.phone}</h2>
-                <h2 className={styles.address}><FontAwesomeIcon icon={faMapPin} className={styles.icon} />{props.address}</h2>
+                <h2 className={styles.address}><FontAwesomeIcon icon={faStar} className={styles.icon} />Rating: {props.rating}/5</h2>
+                <h2 className={styles.address}><FontAwesomeIcon icon={faGlobe} className={styles.icon} /><a href={props.website}>Website</a></h2>
+                <h2 className={styles.address}><FontAwesomeIcon icon={faPhone} className={styles.icon} /><a href={"tel:" + props.phone}>{props.phone}</a></h2>
+                <h2 className={styles.address}><FontAwesomeIcon icon={faMapPin} className={styles.icon} /><a href={"https://maps.google.com/?q=" + props.address}>{props.address}</a></h2>
                 <hr style={{ border: "0", borderBottom: "1px solid #628068" }} />
                 <h2 className={styles.wifi}><FontAwesomeIcon icon={faWifi} className={styles.icon} />{props.wifi ? <>{props.wifiPassword ? "Wifi password: " + props.wifiPassword : "Open Network"}</> : "No Wifi"}</h2>
                 {props.wifi ? <h2 className={styles.wifi}><FontAwesomeIcon icon={faBoltLightning} className={styles.icon} />{props.wifi ? <>{props.wifiSpeed ? "Wifi speed: " + props.wifiSpeed : "unknown"}</> : null}</h2> : null}
@@ -55,12 +59,9 @@ export default function Cafe() {
             </div>
 
             <div className={styles.dataContainer}>
-                <h1 className={styles.name}>{"Notes:"}</h1>
-                <ul className={styles.address} style={{ paddingLeft: "10px" }}>
-                    {props.notes.map((note) => {
-                        return <li>{note}</li>
-                    })}
-                </ul>
+                <h1 className={styles.name}>OPEN HOURS:</h1>
+                <h2 className={styles.address}>Monday-Friday: {props.openWeek}</h2>
+                <h2 className={styles.address}>Weekend: {props.openWeekend}</h2>
             </div>
 
             {props.goodies.length > 0 ?
@@ -85,7 +86,7 @@ export default function Cafe() {
                         <ul className={styles.wanted}>
                             {events.map((e: any) => {
                                 if (top.includes(e.id)) {
-                                    let args = JSON.stringify(e.datetime).trim().toLocaleLowerCase().split(" ");
+                                    let args = JSON.stringify(e.datetime).trim().toLocaleLowerCase().substring(1, JSON.stringify(e.datetime).length - 1).split(" ");
                                     return <EventItem id={e.id} date={args[0]} time={args[1]} price={e.price} name={e.name} image={e.image} />
                                 }
                             })}
@@ -93,6 +94,15 @@ export default function Cafe() {
                     </div>
                 </>
                 : null}
+
+            <div className={styles.dataContainer}>
+                <h1 className={styles.name}>{"Notes:"}</h1>
+                <ul className={styles.address} style={{ paddingLeft: "10px" }}>
+                    {props.notes.map((note) => {
+                        return <li>{note}</li>
+                    })}
+                </ul>
+            </div>
         </div>
 
     );

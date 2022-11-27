@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import styles from '../styles/horizli.module.scss';
 import { faMoneyBill, faWifi, faMapPin } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom';
+import Faver from './faver';
 
 export default function DynamicItem(props: any) {
     //TODO: Change map address pin icon to map location pin
